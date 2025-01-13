@@ -31,5 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
     modeToggle.addEventListener("click", function() {
         document.body.classList.toggle("dark-mode");
         document.body.classList.toggle("light-mode");
+
+        // Update icon based on theme
+        if (document.body.classList.contains("dark-mode")) {
+            modeToggle.innerHTML = '<i class="fas fa-moon moon-icon"></i>';
+        } else {
+            modeToggle.innerHTML = '<i class="fas fa-sun sun-icon"></i>';
+        }
     });
 });
+
+
