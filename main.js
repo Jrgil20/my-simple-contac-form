@@ -1,4 +1,3 @@
-// Add JS here
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     form.addEventListener("submit", async function(event) {
@@ -27,4 +26,19 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Error al enviar el mensaje.");
         }
     });
+
+    const modeToggle = document.getElementById("mode-toggle");
+    modeToggle.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode");
+
+        // Update icon based on theme
+        if (document.body.classList.contains("dark-mode")) {
+            modeToggle.innerHTML = '<i class="fas fa-moon moon-icon"></i>';
+        } else {
+            modeToggle.innerHTML = '<i class="fas fa-sun sun-icon"></i>';
+        }
+    });
 });
+
+
