@@ -1,4 +1,3 @@
-// Add JS here
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     form.addEventListener("submit", async function(event) {
@@ -26,5 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error("Error:", error);
             alert("Error al enviar el mensaje.");
         }
+    });
+
+    const modeToggle = document.getElementById("mode-toggle");
+    modeToggle.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode");
     });
 });
