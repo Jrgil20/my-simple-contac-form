@@ -156,3 +156,41 @@ footer {
   font-size: 1em;
   letter-spacing: 0.5px;
 }
+
+/* =========================
+   Header clásico y visual
+   ========================= */
+header.header-principal {
+  width: 100vw;
+  background: linear-gradient(90deg, var(--azul-principal) 60%, var(--morado) 100%);
+  color: var(--blanco);
+  padding: 32px 0 18px 0;
+  box-shadow: 0 2px 12px rgba(58,91,160,0.10);
+  text-align: center;
+  margin-bottom: 0;
+}
+.header-principal h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.3em;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-shadow: 1px 2px 8px rgba(58,91,160,0.10);
+}
+.header-principal h2 {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #2d3557; /* Azul sobrio, más serio */
+  letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+  .header-principal h1 {
+    font-size: 1.3em;
+  }
+  .header-principal h2 {
+    font-size: 1em;
+  }
+  header.header-principal {
+    padding: 18px 0 10px 0;
+  }
+}
