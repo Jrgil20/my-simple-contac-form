@@ -133,3 +133,26 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+/* =========================
+   Footer fijo al fondo
+   ========================= */
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+  width: 100vw;
+  background: #21222c;
+  color: #f8f8f2;
+  padding: 14px 0 10px 0;
+  text-align: center;
+  border-top: 2px solid #3a5ba0;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
